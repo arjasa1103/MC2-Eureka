@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		689773852474FA450088C802 /* Materials.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 689773842474FA450088C802 /* Materials.storyboard */; };
+		689773872474FA640088C802 /* MaterialDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 689773862474FA640088C802 /* MaterialDetail.storyboard */; };
+		689773892474FB030088C802 /* Materials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689773882474FB030088C802 /* Materials.swift */; };
+		6897738B2474FB1D0088C802 /* MaterialDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6897738A2474FB1D0088C802 /* MaterialDetail.swift */; };
+		6897738D2474FB4C0088C802 /* MaterialTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6897738C2474FB4C0088C802 /* MaterialTableViewCell.swift */; };
+		6897738F2474FFEE0088C802 /* mathematics.json in Resources */ = {isa = PBXBuildFile; fileRef = 6897738E2474FFEE0088C802 /* mathematics.json */; };
 		76A258BD246BF6F500CFB800 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A258BC246BF6F500CFB800 /* AppDelegate.swift */; };
 		76A258BF246BF6F500CFB800 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A258BE246BF6F500CFB800 /* SceneDelegate.swift */; };
 		76A258C1246BF6F500CFB800 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A258C0246BF6F500CFB800 /* ViewController.swift */; };
@@ -17,6 +23,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		689773842474FA450088C802 /* Materials.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Materials.storyboard; sourceTree = "<group>"; };
+		689773862474FA640088C802 /* MaterialDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MaterialDetail.storyboard; sourceTree = "<group>"; };
+		689773882474FB030088C802 /* Materials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Materials.swift; sourceTree = "<group>"; };
+		6897738A2474FB1D0088C802 /* MaterialDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialDetail.swift; sourceTree = "<group>"; };
+		6897738C2474FB4C0088C802 /* MaterialTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialTableViewCell.swift; sourceTree = "<group>"; };
+		6897738E2474FFEE0088C802 /* mathematics.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mathematics.json; sourceTree = "<group>"; };
 		76A258B9246BF6F500CFB800 /* MC2-Eureka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MC2-Eureka.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76A258BC246BF6F500CFB800 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76A258BE246BF6F500CFB800 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +78,12 @@
 				76A258CA246BF6F800CFB800 /* LaunchScreen.storyboard */,
 				76A258CD246BF6F800CFB800 /* Info.plist */,
 				76A258C5246BF6F500CFB800 /* MC2_Eureka.xcdatamodeld */,
+				689773842474FA450088C802 /* Materials.storyboard */,
+				6897738C2474FB4C0088C802 /* MaterialTableViewCell.swift */,
+				689773882474FB030088C802 /* Materials.swift */,
+				6897738A2474FB1D0088C802 /* MaterialDetail.swift */,
+				689773862474FA640088C802 /* MaterialDetail.storyboard */,
+				6897738E2474FFEE0088C802 /* mathematics.json */,
 			);
 			path = "MC2-Eureka";
 			sourceTree = "<group>";
@@ -129,7 +147,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				76A258CC246BF6F800CFB800 /* LaunchScreen.storyboard in Resources */,
+				689773852474FA450088C802 /* Materials.storyboard in Resources */,
+				6897738F2474FFEE0088C802 /* mathematics.json in Resources */,
 				76A258C9246BF6F800CFB800 /* Assets.xcassets in Resources */,
+				689773872474FA640088C802 /* MaterialDetail.storyboard in Resources */,
 				76A258C4246BF6F500CFB800 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,9 +163,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				76A258C1246BF6F500CFB800 /* ViewController.swift in Sources */,
+				689773892474FB030088C802 /* Materials.swift in Sources */,
 				76A258C7246BF6F500CFB800 /* MC2_Eureka.xcdatamodeld in Sources */,
+				6897738B2474FB1D0088C802 /* MaterialDetail.swift in Sources */,
 				76A258BD246BF6F500CFB800 /* AppDelegate.swift in Sources */,
 				76A258BF246BF6F500CFB800 /* SceneDelegate.swift in Sources */,
+				6897738D2474FB4C0088C802 /* MaterialTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
