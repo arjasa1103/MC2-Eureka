@@ -1,25 +1,30 @@
 [{
-  "materialName": "Basic Math",
-  "materialDescription": "simple algorithm",
-  "materialDeadline": "31/05/2020"
+  "materialName": "Linear Equations",
+  "materialDescription": "Equations",
+  "materialDeadline": "31/05/2020",
+  "materialDetails" :"More generally, the solutions of a linear equation in n variables form a hyperplane (a subspace of dimension n − 1) in the Euclidean space of dimension n.Linear equations occur frequently in all mathematics and their applications in physics and engineering, partly because non-linear systems are often well approximated by linear equations."
 },
 {
-   "materialName": "Advanced Math",
-   "materialDescription": "Advanced algorithm",
-   "materialDeadline": "31/05/2020"
+   "materialName": "Matrix",
+   "materialDescription": "Matrix",
+   "materialDeadline": "01/06/2020",
+   "materialDetails" :"More generally, the solutions of a linear equation in n variables form a hyperplane (a subspace of dimension n − 1) in the Euclidean space of dimension n.Linear equations occur frequently in all mathematics and their applications in ph
 },
 {
-   "materialName": "Expert Math",
-   "materialDescription": "Expert algorithm",
-   "materialDeadline": "31/05/2020"
+   "materialName": "Vectors",
+   "materialDescription": "Vector",
+   "materialDeadline": "02/06/2020",
+   "materialDetails" :"More generally, the solutions of a linear equation in n variables form a hyperplane (a subspace of dimension n − 1) in the Euclidean space of dimension n.Linear equations occur frequently in all mathematics and their applications in ph
 },
 {
-   "materialName": "Basic Math 2",
-   "materialDescription": "simple algorithm",
-   "materialDeadline": "31/05/2020"
+   "materialName": "Line and Plane Equations",
+   "materialDescription": "Equations",
+   "materialDeadline": "03/06/2020",
+   "materialDetails" :"More generally, the solutions of a linear equation in n variables form a hyperplane (a subspace of dimension n − 1) in the Euclidean space of dimension n.Linear equations occur frequently in all mathematics and their applications in ph
 },
 {
-   "materialName": "Basic Math 3",
-   "materialDescription": "simple algorithm",
-   "materialDeadline": "31/05/2020"
+   "materialName": "Eigenvalues and Eigenvectors",
+   "materialDescription": "Algorithm",
+   "materialDeadline": "04/06/2020",
+   "materialDetails" :"More generally, the solutions of a linear equation in n variables form a hyperplane (a subspace of dimension n − 1) in the Euclidean space of dimension n.Linear equations occur frequently in all mathematics and their applications in ph
 }]
