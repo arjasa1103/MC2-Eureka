@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19E287" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ClassDetails" representedClassName="ClassDetails" syncable="YES" codeGenerationType="class">
+        <attribute name="class_code" attributeType="String"/>
+        <attribute name="user_id" attributeType="String"/>
+        <relationship name="headerClass" maxCount="1" deletionRule="Nullify" destinationEntity="Classes" inverseName="details" inverseEntity="Classes"/>
+        <relationship name="materials" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MaterialDetails" inverseName="classDetail" inverseEntity="MaterialDetails"/>
+        <relationship name="user" maxCount="1" deletionRule="Nullify" destinationEntity="Users" inverseName="classDetails" inverseEntity="Users"/>
+    </entity>
+    <entity name="Classes" representedClassName="Classes" syncable="YES" codeGenerationType="class">
+        <attribute name="class_code" attributeType="String"/>
+        <attribute name="class_name" attributeType="String"/>
+        <attribute name="completionStatus" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="image" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
+        <attribute name="lecturer_name" attributeType="String"/>
+        <attribute name="subject_name" attributeType="String"/>
+        <attribute name="total_student" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="details" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ClassDetails" inverseName="headerClass" inverseEntity="ClassDetails"/>
+    </entity>
+    <entity name="MaterialDetails" representedClassName="MaterialDetails" syncable="YES" codeGenerationType="class">
+        <attribute name="classDetail_id" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="completionStatus" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="material_id" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="classDetail" maxCount="1" deletionRule="Nullify" destinationEntity="ClassDetails" inverseName="materials" inverseEntity="ClassDetails"/>
+        <relationship name="headerMaterial" maxCount="1" deletionRule="Nullify" destinationEntity="Materials" inverseName="userCompletions" inverseEntity="Materials"/>
+    </entity>
+    <entity name="Materials" representedClassName="Materials" syncable="YES" codeGenerationType="class">
+        <attribute name="dueDate" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="full_description" attributeType="String"/>
+        <attribute name="material_title" attributeType="String"/>
+        <attribute name="toShow_desription" attributeType="String"/>
+        <attribute name="video" attributeType="String"/>
+        <relationship name="quizzes" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Quizzes" inverseName="material" inverseEntity="Quizzes"/>
+        <relationship name="resources" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Resources" inverseName="material" inverseEntity="Resources"/>
+        <relationship name="userCompletions" maxCount="1" deletionRule="Nullify" destinationEntity="MaterialDetails" inverseName="headerMaterial" inverseEntity="MaterialDetails"/>
+    </entity>
+    <entity name="Quizzes" representedClassName="Quizzes" syncable="YES" codeGenerationType="class">
+        <attribute name="answer" attributeType="String"/>
+        <attribute name="material_id" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="option1" attributeType="String"/>
+        <attribute name="option2" attributeType="String"/>
+        <attribute name="option3" attributeType="String"/>
+        <attribute name="option4" attributeType="String"/>
+        <attribute name="question" attributeType="String"/>
+        <relationship name="material" maxCount="1" deletionRule="Nullify" destinationEntity="Materials" inverseName="quizzes" inverseEntity="Materials"/>
+    </entity>
+    <entity name="Resources" representedClassName="Resources" syncable="YES" codeGenerationType="class">
+        <attribute name="link" attributeType="String"/>
+        <attribute name="link_type" attributeType="String"/>
+        <attribute name="material_id" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="material" maxCount="1" deletionRule="Nullify" destinationEntity="Materials" inverseName="resources" inverseEntity="Materials"/>
+    </entity>
+    <entity name="Users" representedClassName="Users" syncable="YES" codeGenerationType="class">
+        <attribute name="email" attributeType="String"/>
+        <attribute name="gender" attributeType="String"/>
+        <attribute name="id" attributeType="String"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="role" attributeType="String"/>
+        <relationship name="classDetails" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ClassDetails" inverseName="user" inverseEntity="ClassDetails"/>
+    </entity>
+    <elements>
+        <element name="ClassDetails" positionX="-239.9609375" positionY="-426.328125" width="128" height="118"/>
+        <element name="Classes" positionX="-411.390625" positionY="-432.3515625" width="128" height="163"/>
+        <element name="MaterialDetails" positionX="-62.87109375" positionY="-426.609375" width="128" height="118"/>
+        <element name="Materials" positionX="-60.6171875" positionY="-246.30078125" width="128" height="163"/>
+        <element name="Quizzes" positionX="115.05078125" positionY="-333.453125" width="128" height="163"/>
+        <element name="Resources" positionX="115.34375" positionY="-145.60546875" width="128" height="103"/>
+        <element name="Users" positionX="-233.12109375" positionY="-220.87890625" width="128" height="133"/>
+    </elements>
+</model>
